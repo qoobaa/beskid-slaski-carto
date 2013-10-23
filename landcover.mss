@@ -179,12 +179,13 @@
   }
 
   [feature = 'landuse_forest'] {
-    [zoom >= 8][zoom < 14] {
-      polygon-fill: @forest;
-    }
-    [zoom >= 14] {
-      polygon-pattern-file: url('symbols/forest.png');
-    }
+    // [zoom >= 8][zoom < 14] {
+    //   polygon-fill: @forest;
+    // }
+    // [zoom >= 14] {
+    //   polygon-pattern-file: url('symbols/forest.png');
+    // }
+        polygon-fill: @forest;
   }
 
   [feature = 'landuse_farmyard'][zoom >= 9] {

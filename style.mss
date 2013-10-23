@@ -1,5 +1,5 @@
 Map {
-  background-color: @water-color;
+    background-color: @water-color;
 }
 
 @book-fonts: "DejaVu Sans Book", "unifont Medium";

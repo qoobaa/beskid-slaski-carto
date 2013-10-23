@@ -36,41 +36,41 @@
   }
 }
 
-#admin-5678 {
-  [admin_level = '5'][zoom >= 11] {
-    line-color: purple;
-    line-width: 2;
-    line-dasharray: 6,3,2,3,2,3;
-    line-opacity: 0.3;
-  }
-  [admin_level = '6'][zoom >= 11] {
-    line-color: purple;
-    line-width: 2;
-    line-dasharray: 6,3,2,3;
-    line-opacity: 0.3;
-  }
-  [admin_level = '7'],
-  [admin_level = '8'] {
-    [zoom >= 12] {
-      line-color: purple;
-      line-width: 1.5;
-      line-dasharray: 5,2;
-      line-opacity: 0.3;
-    }
-  }
-}
+// #admin-5678 {
+//   [admin_level = '5'][zoom >= 11] {
+//     line-color: purple;
+//     line-width: 2;
+//     line-dasharray: 6,3,2,3,2,3;
+//     line-opacity: 0.3;
+//   }
+//   [admin_level = '6'][zoom >= 11] {
+//     line-color: purple;
+//     line-width: 2;
+//     line-dasharray: 6,3,2,3;
+//     line-opacity: 0.3;
+//   }
+//   [admin_level = '7'],
+//   [admin_level = '8'] {
+//     [zoom >= 12] {
+//       line-color: purple;
+//       line-width: 1.5;
+//       line-dasharray: 5,2;
+//       line-opacity: 0.3;
+//     }
+//   }
+// }
 
-#admin-other {
-  [admin_level = '9'],
-  [admin_level = '10'] {
-    [zoom >= 13] {
-      line-color: purple;
-      line-width: 2;
-      line-dasharray: 2,3;
-      line-opacity: 0.3;
-    }
-  }
-}
+// #admin-other {
+//   [admin_level = '9'],
+//   [admin_level = '10'] {
+//     [zoom >= 13] {
+//       line-color: purple;
+//       line-width: 2;
+//       line-dasharray: 2,3;
+//       line-opacity: 0.3;
+//     }
+//   }
+// }
 
 /*
  * err, what does this do?

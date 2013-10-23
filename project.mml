@@ -1,19 +1,19 @@
 {
   "bounds": [
-    -180,
-    -85.05112877980659,
-    180,
-    85.05112877980659
+    18.7334,
+    49.3847,
+    19.2443,
+    49.8013
   ],
   "center": [
-    0,
-    0,
-    4
+    18.9999,
+    49.6015,
+    10
   ],
-  "format": "png",
+  "format": "png8",
   "interactivity": false,
-  "minzoom": 0,
-  "maxzoom": 22,
+  "minzoom": 10,
+  "maxzoom": 15,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss",
@@ -32,7 +32,8 @@
     "ferry-routes.mss",
     "aerialways.mss",
     "admin.mss",
-    "addressing.mss"
+    "addressing.mss",
+    "contours.mss"
   ],
   "Layer": [
     {
@@ -151,6 +152,78 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
       "name": "landcover"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        17.999583333333337,
+        48.99968532644428,
+        20.000580628709567,
+        50.000416666666666
+      ],
+      "id": "hillshade",
+      "class": "",
+      "Datasource": {
+        "file": "data/srtm/hillshade.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "hillshade"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        17.999583333333334,
+        48.999583333333334,
+        20.000416666666666,
+        50.000416666666666
+      ],
+      "id": "contours100",
+      "class": "",
+      "Datasource": {
+        "file": "data/srtm/contours100.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "contours100"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        17.999583333333334,
+        48.999583333333334,
+        20.000416666666666,
+        50.000416666666666
+      ],
+      "id": "contours50",
+      "class": "",
+      "Datasource": {
+        "file": "data/srtm/contours50.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "contours50"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        17.999583333333334,
+        48.999583333333334,
+        20.000416666666666,
+        50.000416666666666
+      ],
+      "id": "contours10",
+      "class": "",
+      "Datasource": {
+        "file": "data/srtm/contours10.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "contours10"
     },
     {
       "geometry": "linestring",
@@ -2137,5 +2210,6 @@
   "scale": 1,
   "metatile": 2,
   "name": "OpenStreetMap Carto",
-  "description": "A faithful reimplementation of the standard OpenStreetMap style"
+  "description": "A faithful reimplementation of the standard OpenStreetMap style",
+  "attribution": ""
 }
