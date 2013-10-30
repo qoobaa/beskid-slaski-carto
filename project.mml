@@ -2208,7 +2208,7 @@
     }
   ],
   "scale": 1,
-  "metatile": 8,
+  "metatile": 15,
   "name": "OpenStreetMap Carto",
   "description": "A faithful reimplementation of the standard OpenStreetMap style",
   "attribution": ""
